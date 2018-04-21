@@ -106,6 +106,10 @@ contract Gallery is ERC721Token, IPFSeable, Pausable, Destructible{
         PictureSelled(_pictureID);
     }
 
+    function picturesCount() constant public returns (uint) {
+        return pictures.length;
+    }
+
     function getPicture(uint _pictureID)
         public
         view
