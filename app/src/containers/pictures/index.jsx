@@ -62,6 +62,7 @@ class Pictures extends Component {
 		))
 		return (
 			<div>
+				<Link to='/gallery'>view</Link>
 				<div>
 					{items}
 				</div>
