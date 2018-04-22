@@ -108,7 +108,7 @@ class AddPictures extends Component {
             href={'https://ipfs.io/ipfs/' + this.state.added_file_hash}>
             {this.state.added_file_hash}
           </a>
-          	{<img src={'https://ipfs.io/ipfs/' + this.state.added_file_hash} />}
+          	{<img style={{ width: 100 }} src={'https://ipfs.io/ipfs/' + this.state.added_file_hash} />}
           </div>}
 					<div>
 						description:

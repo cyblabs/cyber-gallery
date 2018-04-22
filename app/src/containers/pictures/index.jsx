@@ -54,10 +54,10 @@ class Pictures extends Component {
 		const { pictures } = this.state;
 		const items = pictures.map((picture, index) => (
 			<div key={index}>
-				<span>{picture.pictureName}</span>
-				<span>{picture.pictureDescription}</span>
-				<img src={'https://ipfs.io/ipfs/' + picture.pictureCID} />
-				<span>{picture.price}</span>
+				<h2>{picture.pictureName}</h2>
+				<img style={{ width: 200 }} src={'https://ipfs.io/ipfs/' + picture.pictureCID} />
+				<p>{picture.pictureDescription}</p>
+				<p>{picture.price}</p>
 			</div>
 		))
 		return (
@@ -66,8 +66,7 @@ class Pictures extends Component {
 				<div>
 					{items}
 				</div>
-				<Link to='/add'>add picture</Link>
-				Pictures
+				<Link className='btn' to='/add'>add picture</Link>				
 			</div>
 		);
 	}
